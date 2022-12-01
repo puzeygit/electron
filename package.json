@@ -1,0 +1,26 @@
+{
+  "name": "Sample Browser",
+  "version": "1.0.0",
+  "description": "A min Electron broweser",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^21.3.1"
+  },
+  "build":{
+    "asar": true,
+    "appId": "com.invidelabs.dairy",
+    "linux":{
+      
+    }
+  },
+  "dependencies": {
+    "electron-builder": "^23.6.0",
+    "kioskboard": "^2.3.0",
+    "vs-virtual-keyboard": "^1.1.1"
+  }
+}

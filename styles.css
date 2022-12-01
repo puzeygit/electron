@@ -1,0 +1,64 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+webview{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 90% !important;
+}
+.top {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  background-color: #ccc;
+  height: 10%;
+  width: 100%;
+  padding: 2px 5px 0;
+}
+button{
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 5px;
+}
+.url{
+  display: inline-block;
+  box-sizing: border-box;
+  border: 1.5px solid #00B4CC;
+  padding: 3px;
+  height: 38px;
+  width: 45%;
+  border-radius: 5px;
+  outline: none;
+  color: grey;
+  font-size: 16px;
+  transition-duration: 0.3s;
+  text-align: left;
+  vertical-align: middle;
+  margin-top: -4px;
+}
+.url:focus{
+  border: 2px solid #00B4CC;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #333;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background: #ddd;
+    color: black;
+  }
+}
+

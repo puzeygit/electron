@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="./styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Broweser App</title>
+  </head>
+  <body>
+    <div class="top">
+      <button onclick="goBack()">
+        <i class="fa-solid fa-backward"></i>
+      </button>
+      <button onclick="goHome()">
+        <i class="fa-solid fa-house"></i>
+      </button>
+      <button onclick="goForward()">
+        <i class="fa-solid fa-forward"></i>
+      </button>
+      <input
+        type="js-kioskboard-input text "
+        class="url"
+        id="url"
+        data-kioskboard-type="all"
+        data-kioskboard-placement="bottom"
+        data-kioskboard-specialcharacters="true"
+      />
+      <!-- <input
+        class="js-virtual-keyboard"
+        data-kioskboard-type="keyboard"
+        data-kioskboard-placement="bottom"
+        data-kioskboard-specialcharacters="false"
+        placeholder="Your Name"
+      /> -->
+      <button onclick="go()">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </div>
+    <webview
+      id="myWebview"
+      src="https://google.com"
+      style="width: 100%; height: 100vh"
+    ></webview>
+    <script src="./script.js"></script>
+  </body>
+</html>
